@@ -1,0 +1,17 @@
+<h1>here will live the form</h1>
+
+<%= form_tag(posts_index_path, method: "post") do %>
+  <div class="form-group">
+    <%= label_tag :title %>
+    <%= text_field_tag(:title, nil, placeholder: "Title... ", class: "control-label") %><br>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag :content %>
+    <%= text_area_tag(:content, nil, placeholder: "Content...") %><br>
+  </div>
+
+  <p>
+    <%= submit_tag "Create", class: "btn btn-success btn-block" %>
+  </p>
+<% end %>
