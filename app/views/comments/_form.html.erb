@@ -1,0 +1,9 @@
+<%= form_with(model: [@post, @post.comments.build], :method => "post", class: "m-4") do %>
+  <div class="form-group">
+    <%= text_field_tag(:name, placeholder: "Post Title", class: "form-control") %>
+  </div>
+  <div class="form-group">
+    <%= text_area_tag(:comment, ,placeholder: "Post Description", class: "form-control") %>
+  </div>
+  <%= submit_tag :submit, class: "btn btn-success btn-block" %>
+<% end %>
