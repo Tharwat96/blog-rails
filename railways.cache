@@ -1,10 +1,11 @@
-do /run/media/tharwat-manjaro/Linux-Data/Projects/Rails/blog/bin/bundle exec /home/tharwat-manjaro/.rvm/rubies/ruby-2.7.0/bin/ruby /run/media/tharwat-manjaro/Linux-Data/Projects/Rails/blog/bin/rake routes --trace
+do /run/media/tharwat-manjaro/Linux-Data/Projects/Rails/blog/bin/bundle exec /home/tharwat-manjaro/.rvm/rubies/ruby-2.6.5/bin/ruby /run/media/tharwat-manjaro/Linux-Data/Projects/Rails/blog/bin/rake routes --trace
 Ruby enVironment Manager 1.29.9-next (master) (c) 2009-2017 Michal Papis, Piotr Kuczynski, Wayne E. Seguin
 
                                Prefix Verb   URI Pattern                                                                              Controller#Action
                        homepage_index GET    /homepage/index(.:format)                                                                homepage#index
                           posts_index GET    /posts/index(.:format)                                                                   posts#index
-                                 root GET    /                                                                                        homepage#index
+                            posts_new GET    /posts/new(.:format)                                                                     posts#new
+                                 root GET    /                                                                                        posts#index
         rails_mandrill_inbound_emails POST   /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#create
         rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
            rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
